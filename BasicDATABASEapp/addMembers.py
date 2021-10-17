@@ -42,7 +42,7 @@ class AddMember:
         self.db = mysql.connector.connect(
             host="localhost",
             user="root",
-            passwd="17MM3102",
+            passwd="????????",
             database="PayRollDB",
             auth_plugin='mysql_native_password'
             )
