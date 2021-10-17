@@ -1,0 +1,135 @@
+DB stucture documented
+
+# Employee table
+
+CREATE TABLE employees (
+Employ_ID int NOT NULL AUTO_INCREMENT,
+last_name varchar(255) NOT NULL,
+first_name varchar(255),
+gender varchar(255),
+date_hired DATE,
+PRIMARY KEY (Employ_ID)
+)
+
+# Employ_ID, Last_Name, Fist_Name
+
+# adding members to the employee table
+
+USE PayRollDB;
+INSERT INTO Employee(Last_Name, First_Name)
+VALUES ('Benjamin', 'Breaking')
+
+# Check_In table
+
+CREATE TABLE check_In (
+Check_ID int NOT NULL AUTO_INCREMENT,
+check_In_date DATE,
+check_in_time TIME,
+PRIMARY KEY (Check_ID)
+)
+
+# Check_ID, Check_In_Time
+
+# Check_Out table
+
+CREATE TABLE Check_Out (
+Check_ID int NOT NULL AUTO_INCREMENT,
+Check_Out_Time DATETIME,
+PRIMARY KEY (Check_ID)
+)
+
+# Check_ID, Check_Out_Time
+
+# Salary Table
+
+CREATE TABLE Employee_Salary (
+Salary_ID int NOT NULL AUTO_INCREMENT,
+Salary int,
+PRIMARY KEY (Salary_ID)
+)
+
+# Salary_ID, Salary
+
+# Salary Employee Bridge
+
+CREATE TABLE Employee_Salary_Bridge (
+Salary_ID int,
+Employ_ID int
+)
+
+# Salary_ID, Employ_ID
+
+# Check-in, Employee Bridge
+
+CREATE TABLE Employee_Check_In_Bridge (
+Check_ID int,
+Employ_ID int
+)
+
+# Check_ID, Employ_ID
+
+# check-out, Employee Bridge
+
+CREATE TABLE Employee_Check_Out_Bridge (
+Check_ID int,
+Employ_ID int
+)
+
+# Check_ID, Employ_ID 
+
+
+Application queries
+# adding a member
+'INSERT INTO Employee (Last_Name, First_Name) VALUES ("self.first_name_box.get()", "self.surname_box.get()")'
+
+INSERT INTO Employee (Last_Name, First_Name) VALUES ('forname', 'Surname');
+
+'INSERT INTO Employee (Last_Name, First_Name) VALUES ("self.first_name_box.get()", "self.surname_box.get()");'
+
+# add a checkin
+
+SELECTING FOR A NAME
+storing the employee ID
+adding a new checkin ID
+adding a bridge element with employee ID and checkin ID
+password protection
+
+then connecting it
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
